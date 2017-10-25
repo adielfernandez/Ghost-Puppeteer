@@ -1,0 +1,34 @@
+<group>
+	<___BACKGROUND_SETTINGS/>
+	<Background_Trans>0.405</Background_Trans>
+	<___FOG_SHADER/>
+	<Fog_Layers>3</Fog_Layers>
+	<Drift_Speed>0.1</Drift_Speed>
+	<Noise_Speed>0.132507</Noise_Speed>
+	<Noise_Scale>0.0004591</Noise_Scale>
+	<Squish_Y>5</Squish_Y>
+	<Octave_Diff>0.00065087</Octave_Diff>
+	<Fog_Trans>0.505</Fog_Trans>
+	<Fog_Midpoint>0.5</Fog_Midpoint>
+	<Boundary_Sharpness>2.3</Boundary_Sharpness>
+<group/>
+<___CLOTH_SETTINGS/>
+	<Solving_Iterations>6</Solving_Iterations>
+	<Link_Stiffness>0.54</Link_Stiffness>
+	<Rest_Distance>20.305</Rest_Distance>
+	<Mouse_Rad>40</Mouse_Rad>
+	<Mouse_Strength>1</Mouse_Strength>
+	<Damping>0.96925</Damping>
+	<___FORCES/>
+	<Use_Gravity>1</Use_Gravity>
+	<Gravity_Strength>1132.5</Gravity_Strength>
+	<Use_Wind>0</Use_Wind>
+	<Wind_Strength>210</Wind_Strength>
+	<Wind_Variation>2190</Wind_Variation>
+	<Wind_Var__Speed>0.83225</Wind_Var__Speed>
+	<Wind_Scale>0.11424</Wind_Scale>
+<Show_Stresses>0</Show_Stresses>
+<___KINECT/>
+	<Num_Points_to_Smooth>6</Num_Points_to_Smooth>
+<Draw_Textured>1</Draw_Textured>
+</group>

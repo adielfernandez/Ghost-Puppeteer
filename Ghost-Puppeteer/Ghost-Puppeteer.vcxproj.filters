@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxBaseGui.cpp">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxButton.cpp">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxGuiGroup.cpp">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxLabel.cpp">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxPanel.cpp">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxSlider.cpp">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxSliderGroup.cpp">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxGui\src\ofxToggle.cpp">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PointMass.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Cloth.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxAutoReloadedShader\src\ofxAutoReloadedShader.cpp">
+      <Filter>addons\ofxAutoReloadedShader\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Gui.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Ghost.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxFluid\src\ofxFluid.cpp">
+      <Filter>addons\ofxFluid\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxFX\src\ofxFXObject.cpp">
+      <Filter>addons\ofxFX\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons">
+      <UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxEasing">
+      <UniqueIdentifier>{CAD580FB-01DB-F456-F00B-7791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxEasing\src">
+      <UniqueIdentifier>{59A6BD40-DCB3-8A98-B41B-1BA9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxGui">
+      <UniqueIdentifier>{4F2A59AF-5F4E-704B-D067-EC13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxGui\src">
+      <UniqueIdentifier>{645E9533-4DCD-6179-1CDF-CB65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxAutoReloadedShader">
+      <UniqueIdentifier>{b3d624e8-c8e9-4abe-9340-6d178ebb8b6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxAutoReloadedShader\src">
+      <UniqueIdentifier>{2dd32d96-1899-4a4f-b927-79e42d9b529a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxFluid">
+      <UniqueIdentifier>{dd4e9f9b-506f-4174-b85a-ef637a47a24c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxFluid\src">
+      <UniqueIdentifier>{d84bf3bf-8b1b-416b-b318-4066f4463db8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxFX">
+      <UniqueIdentifier>{1f94e6af-4286-419b-abc6-0e22bb9ed3d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxFX\src">
+      <UniqueIdentifier>{3f4bf1ee-423a-4975-b728-0a2e82cdb973}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxFX\src\composers">
+      <UniqueIdentifier>{8b4b56cb-7028-42cd-9bdc-7e2784a03818}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxFX\src\filters">
+      <UniqueIdentifier>{06790172-362f-409f-bef3-b6e2001f638a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxFX\src\generative">
+      <UniqueIdentifier>{63f69424-abaf-43ec-8e16-6d4bf0a86199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxFX\src\operations">
+      <UniqueIdentifier>{8929ffbf-7d6a-4122-8701-885566d44c50}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxEasing\src\easing_terms_of_use.html">
+      <Filter>addons\ofxEasing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxEasing\src\ofxEasing.h">
+      <Filter>addons\ofxEasing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxBaseGui.h">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxButton.h">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxGui.h">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxGuiGroup.h">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxLabel.h">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxPanel.h">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxSlider.h">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxSliderGroup.h">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxGui\src\ofxToggle.h">
+      <Filter>addons\ofxGui\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PointMass.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cloth.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxAutoReloadedShader\src\ofxAutoReloadedShader.h">
+      <Filter>addons\ofxAutoReloadedShader\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gui.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ghost.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFluid\src\ofxFluid.h">
+      <Filter>addons\ofxFluid\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\ofxFX.h">
+      <Filter>addons\ofxFX\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\ofxFXObject.h">
+      <Filter>addons\ofxFX\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\ofxSwapBuffer.h">
+      <Filter>addons\ofxFX\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\composers\ofxBlend.h">
+      <Filter>addons\ofxFX\src\composers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\composers\ofxClone.h">
+      <Filter>addons\ofxFX\src\composers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\composers\ofxMask.h">
+      <Filter>addons\ofxFX\src\composers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\composers\ofxMultiTexture.h">
+      <Filter>addons\ofxFX\src\composers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\filters\ofxBarrelChromaAb.h">
+      <Filter>addons\ofxFX\src\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\filters\ofxBloom.h">
+      <Filter>addons\ofxFX\src\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\filters\ofxBlur.h">
+      <Filter>addons\ofxFX\src\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\filters\ofxBokeh.h">
+      <Filter>addons\ofxFX\src\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\filters\ofxChromaAb.h">
+      <Filter>addons\ofxFX\src\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\filters\ofxChromaGlitch.h">
+      <Filter>addons\ofxFX\src\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\filters\ofxContrast.h">
+      <Filter>addons\ofxFX\src\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\filters\ofxGaussianBlur.h">
+      <Filter>addons\ofxFX\src\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\filters\ofxGlow.h">
+      <Filter>addons\ofxFX\src\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\filters\ofxGrayscale.h">
+      <Filter>addons\ofxFX\src\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\filters\ofxInverse.h">
+      <Filter>addons\ofxFX\src\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\filters\ofxLUT.h">
+      <Filter>addons\ofxFX\src\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\filters\ofxMedian.h">
+      <Filter>addons\ofxFX\src\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\filters\ofxOldTv.h">
+      <Filter>addons\ofxFX\src\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\generative\ofxFBM.h">
+      <Filter>addons\ofxFX\src\generative</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\generative\ofxFire.h">
+      <Filter>addons\ofxFX\src\generative</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\generative\ofxGrayScott.h">
+      <Filter>addons\ofxFX\src\generative</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\generative\ofxNoise.h">
+      <Filter>addons\ofxFX\src\generative</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\generative\ofxTint.h">
+      <Filter>addons\ofxFX\src\generative</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\operations\ofxAbsDiff.h">
+      <Filter>addons\ofxFX\src\operations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\operations\ofxBounce.h">
+      <Filter>addons\ofxFX\src\operations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\operations\ofxDisplacePixels.h">
+      <Filter>addons\ofxFX\src\operations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\operations\ofxEdgeDetect.h">
+      <Filter>addons\ofxFX\src\operations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\operations\ofxFlow.h">
+      <Filter>addons\ofxFX\src\operations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\operations\ofxNormals.h">
+      <Filter>addons\ofxFX\src\operations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\operations\ofxRipples.h">
+      <Filter>addons\ofxFX\src\operations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\operations\ofxSubstract.h">
+      <Filter>addons\ofxFX\src\operations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFX\src\operations\ofxThreshold.h">
+      <Filter>addons\ofxFX\src\operations</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+</Project>
