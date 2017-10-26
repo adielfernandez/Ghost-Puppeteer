@@ -18,7 +18,9 @@ void Gui::setup(){
 	guiFileName = guiName + ".xml";
 	gui.setup(guiName, guiFileName);
 	gui.add(backgroundLabel.setup("   BACKGROUND SETTINGS", ""));
-	gui.add(bgTrans.setup("Background Trans", 0.1, 0.0, 1.0));
+	gui.add(bgMaxTrans.setup("Background Trans", 0.1, 0.0, 1.0));
+	gui.add(bgFadeTime.setup("Fade In Out Time", 1.0, 0.2, 4.0));
+	gui.add(bgDuration.setup("Background Duration", 10.0, 10.0, 30.0));
 
 	//shader settings
 	gui.add(shaderLabel.setup("   FOG SHADER", ""));

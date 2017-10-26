@@ -29,9 +29,35 @@ void ofApp::setup(){
 	//fbo.end();
 
 	//backgrounds 
-	ofImage img;
-	img.load("backgrounds/graveyard.jpg");
-	backgrounds.push_back(img);
+	ofDirectory texDir;
+	texDir.listDir("backgrounds");
+
+	for (int i = 0; i < (int)texDir.size(); i++) {
+
+		ofTexture t;
+		ofLoadImage(t, texDir.getPath(i));
+
+		backgrounds.push_back(t);
+
+	}
+
+	timeSinceBGChange = 0;
+	activeBG = 0;
+	currentBGTrans = 0.0;
+
+
+	ofDirectory ghostTexDir;
+	ghostTexDir.listDir("textures");
+
+	for (int i = 0; i < (int)ghostTexDir.size(); i++) {
+
+		ofTexture t;
+		ofLoadImage(t, ghostTexDir.getPath(i));
+
+		ghostTextures.push_back(t);
+
+	}
+	currentGhostTex = 0;
 
 	gui = make_shared<Gui>();
 	gui->setup();
@@ -43,10 +69,17 @@ void ofApp::setup(){
 		Ghost g;
 		g.setup();
 		g.getGui(gui);
+
+		int texNum = i % ghostTextures.size();
+
+		g.setTexture(ghostTextures[texNum]);
+
 		//g.getFluid(fluid);
 		ghosts.push_back(g);
 		
 	}
+
+	bShowGui = true;
 
 }
 
@@ -70,18 +103,34 @@ void ofApp::update(){
 	}
 
 
-	//if( !bodyFound) {
-	//	ghosts[0].update();
-	//}
+	//handle background transitions
+	float time = ofGetElapsedTimef() - timeSinceBGChange;
+	if (time < gui->bgFadeTime) {
 
-	//fluid->dissipation = gui->dissipation;
-	//fluid->velocityDissipation = gui->velDissipation;
-	//fluid->setGravity(ofVec2f(0.0, gui->gravity));
+		//fade in
+		currentBGTrans = ofxeasing::map_clamp(time, 0.0, gui->bgFadeTime, 0.0f, gui->bgMaxTrans, &ofxeasing::linear::easeIn);
+		
+	}
+	else if (time < gui->bgDuration - gui->bgFadeTime) {
 
+		currentBGTrans = gui->bgMaxTrans;
 
-	////add gui settings to cloths
+	}
+	else if (time < gui->bgDuration) {
 
-	//fluid->update();
+		//fade out
+		currentBGTrans = ofxeasing::map_clamp(time, gui->bgDuration - gui->bgFadeTime, gui->bgDuration, gui->bgMaxTrans, 0.0f, &ofxeasing::linear::easeIn);
+
+	}
+	else {
+		timeSinceBGChange = ofGetElapsedTimef();
+		activeBG++;
+
+		if (activeBG >= backgrounds.size()) activeBG = 0;
+
+	}
+		
+
 
 }
 
@@ -94,8 +143,8 @@ void ofApp::draw() {
 
 	ofEnableAlphaBlending();
 
-	ofSetColor(255, 255 * gui->bgTrans);
-	backgrounds[0].draw(0, 0, ofGetWidth(), ofGetHeight());
+	ofSetColor(255, 255 * currentBGTrans);
+	backgrounds[activeBG].draw(0, 0, ofGetWidth(), ofGetHeight());
 
 
 	int depthWidth = 512;
@@ -152,11 +201,13 @@ void ofApp::draw() {
 	//float y = ofGetHeight() / 2 + 400 * sin(ofGetElapsedTimef() * 1.5);
 	//ofDrawCircle(x, y, 100);
 
+	if (bShowGui) {
 
-	ofSetColor(255);
-	ofDrawBitmapString("Framerate: " + ofToString(ofGetFrameRate(), 2), 10, 20);
+		ofSetColor(255);
+		ofDrawBitmapString("Framerate: " + ofToString(ofGetFrameRate(), 2), 10, 20);
 
-	gui->draw(10, 50);
+		gui->draw(10, 50);
+	}
 
 }
 
@@ -167,7 +218,20 @@ void ofApp::keyPressed(int key){
 
 	if (key == 's') gui->saveSettings();
 	if (key == 'l') gui->loadSettings();
+	if (key == 'g') bShowGui = !bShowGui;
 
+
+	if (key == OF_KEY_RIGHT) {
+
+		currentGhostTex++;
+
+		if (currentGhostTex >= ghostTextures.size()) currentGhostTex = 0;
+
+		for (int i = 0; i < ghosts.size(); i++) {
+			ghosts[i].setTexture(ghostTextures[currentGhostTex]);
+		}
+
+	}
 }
 
 //--------------------------------------------------------------

@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "ofxGui.h"
+#include "ofxEasing.h"
 
 class Gui{
 public:
@@ -21,7 +22,9 @@ public:
 
 	ofxPanel gui;
 	ofxLabel backgroundLabel;
-	ofxFloatSlider bgTrans;
+	ofxFloatSlider bgMaxTrans;
+	ofxFloatSlider bgFadeTime;
+	ofxFloatSlider bgDuration;
 
 	ofxLabel shaderLabel;
 	ofxIntSlider fogLayers;

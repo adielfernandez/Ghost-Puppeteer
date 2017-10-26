@@ -12,7 +12,7 @@ void Ghost::setup() {
 
 	ghostTex = img.getTexture();
 
-	cloth.tex = ghostTex;
+
 	cloth.setup(ofVec2f(400, 100), 60, 40, 20, 60);
 	bHaveBody = false;
 	bFirstBodySetup = false;
@@ -24,6 +24,10 @@ void Ghost::setup() {
 
 void Ghost::getGui(const shared_ptr<Gui> g) {
 	gui = g;
+}
+
+void Ghost::setTexture(ofTexture tex) {
+	cloth.tex = tex;
 }
 
 //void Ghost::getFluid(const shared_ptr<ofxFluid> f) {

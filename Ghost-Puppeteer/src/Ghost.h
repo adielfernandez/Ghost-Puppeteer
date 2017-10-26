@@ -40,7 +40,7 @@ public:
 	
 	void getGui(const shared_ptr<Gui> g);
 	//void getFluid(const shared_ptr<ofxFluid> f);
-	
+	void setTexture(ofTexture tex);
 	
 	shared_ptr<Gui> gui;
 

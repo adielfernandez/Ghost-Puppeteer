@@ -38,9 +38,16 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 
 		ofxAutoReloadedShader shader;
-		vector<ofImage> backgrounds;
+		vector<ofTexture> backgrounds;
+		vector<ofTexture> ghostTextures;
+
+		float timeSinceBGChange;
+		int activeBG;
+		float currentBGTrans;
+		
 
 		vector<Ghost> ghosts;
+		int currentGhostTex;
 		//shared_ptr<ofxFluid> fluid;
 		//ofFbo fbo;
 
@@ -48,5 +55,6 @@ class ofApp : public ofBaseApp{
 		ICoordinateMapper* coordinateMapper;
 
 		shared_ptr<Gui> gui;
+		bool bShowGui;
 		
 };

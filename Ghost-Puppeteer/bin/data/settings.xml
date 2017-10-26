@@ -1,6 +1,6 @@
 <group>
 	<___BACKGROUND_SETTINGS/>
-	<Background_Trans>0.405</Background_Trans>
+	<Background_Trans>0.355</Background_Trans>
 	<___FOG_SHADER/>
 	<Fog_Layers>3</Fog_Layers>
 	<Drift_Speed>0.1</Drift_Speed>
@@ -31,4 +31,6 @@
 <___KINECT/>
 	<Num_Points_to_Smooth>6</Num_Points_to_Smooth>
 <Draw_Textured>1</Draw_Textured>
+<Fade_In_Out_Time>2.43725</Fade_In_Out_Time>
+	<Background_Duration>30</Background_Duration>
 </group>
