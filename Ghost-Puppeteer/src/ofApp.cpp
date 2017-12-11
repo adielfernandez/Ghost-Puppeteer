@@ -79,7 +79,9 @@ void ofApp::setup(){
 		
 	}
 
-	bShowGui = true;
+	bShowGui = false;
+
+	ofSetFullscreen(true);
 
 }
 

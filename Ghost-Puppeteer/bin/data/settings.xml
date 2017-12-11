@@ -1,16 +1,16 @@
 <group>
 	<___BACKGROUND_SETTINGS/>
-	<Background_Trans>0.355</Background_Trans>
+	<Background_Trans>0.31</Background_Trans>
 	<___FOG_SHADER/>
 	<Fog_Layers>3</Fog_Layers>
 	<Drift_Speed>0.1</Drift_Speed>
-	<Noise_Speed>0.132507</Noise_Speed>
-	<Noise_Scale>0.0004591</Noise_Scale>
+	<Noise_Speed>0.220006</Noise_Speed>
+	<Noise_Scale>0.00058385</Noise_Scale>
 	<Squish_Y>5</Squish_Y>
 	<Octave_Diff>0.00065087</Octave_Diff>
-	<Fog_Trans>0.505</Fog_Trans>
+	<Fog_Trans>0.53</Fog_Trans>
 	<Fog_Midpoint>0.5</Fog_Midpoint>
-	<Boundary_Sharpness>2.3</Boundary_Sharpness>
+	<Boundary_Sharpness>8.6</Boundary_Sharpness>
 <group/>
 <___CLOTH_SETTINGS/>
 	<Solving_Iterations>6</Solving_Iterations>
